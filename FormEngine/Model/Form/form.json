@@ -1,0 +1,146 @@
+{
+    "rows": [
+        {
+            "id": "title",
+            "type": 0,
+            "title": "Registration"
+        },
+        {
+            "id": "user_name",
+            "type": 2,
+            "title": "Username",
+            "validations": [
+                {
+                    "regex": "^[a-zA-Z0-9]+$",
+                    "message": "Please enter"
+                },
+                {
+                    "regex": "^[a-zA-Z0-9]{4,}$",
+                    "message": "Username should be at least 4 characters"
+                }
+            ]
+        },
+        {
+            "id": "password",
+            "type": 4,
+            "title": "Password",
+            "validations": [
+                {
+                    "regex": ".+",
+                    "message": "Please enter"
+                },
+                {
+                    "regex": "[a-z]",
+                    "message": "Password should contain at least 1 lowercase character"
+                },
+                {
+                    "regex": "[A-Z]",
+                    "message": "Password should contain at least 1 uppercase character"
+                },
+                {
+                    "regex": "[0-9]",
+                    "message": "Password should contain at least 1 digit"
+                },
+                {
+                    "regex": "^[a-zA-Z0-9]+$",
+                    "message": "Password should not contain special character"
+                },
+                {
+                    "regex": ".{8,}",
+                    "message": "Password should be at least 8 characters"
+                }
+            ]
+        },
+        {
+            "id": "confirm_password",
+            "type": 4,
+            "title": "Confirm Password",
+            "validations": [
+                {
+                    "regex": ".+",
+                    "message": "Please enter"
+                }
+            ]
+        },
+        {
+            "id": "first_name",
+            "type": 2,
+            "title": "First Name",
+            "validations": [
+                {
+                    "regex": "^[a-zA-Z0-9]+$",
+                    "message": "Please enter"
+                },
+            ]
+        },
+        {
+            "id": "middle_name",
+            "type": 2,
+            "title": "Middle Name"
+        },
+        {
+            "id": "last_name",
+            "type": 2,
+            "title": "Last Name",
+            "validations": [
+                {
+                    "regex": "^[a-zA-Z0-9]+$",
+                    "message": "Please enter"
+                }
+            ]
+        },
+        {
+            "id": "gender",
+            "type": 3,
+            "title": "Gender",
+            "items": [
+                {
+                    "id": 0,
+                    "value": "Male",
+                },
+                {
+                    "id": 1,
+                    "value": "Female",
+                }
+            ],
+            "validations": [
+                {
+                    "regex": "^[0-9]+$",
+                    "message": "Please select"
+                }
+            ]
+        },
+        {
+            "id": "age",
+            "type": 2,
+            "title": "Age",
+            "keyboardType": 1
+        },
+        {
+            "id": "street",
+            "type": 2,
+            "title": "Street"
+        },
+        {
+            "id": "city",
+            "type": 2,
+            "title": "City"
+        },
+        {
+            "id": "province",
+            "type": 2,
+            "title": "Province"
+        },
+        {
+            "id": "country",
+            "type": 2,
+            "title": "Country"
+        },
+        {
+            "id": "submit",
+            "type": 1,
+            "title": "Register",
+            "action": 0
+        }
+    ]
+}
